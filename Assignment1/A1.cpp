@@ -46,8 +46,7 @@ void addInt(int value, int*& arr, int size) {
     delete[] arr2;
     arr2 = nullptr;
 
-    int size3 = 11;
-    for (int i = 0; i < size3; i++) {
+    for (int i = 0; i < size + 1; i++) {
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -73,8 +72,7 @@ void removeInt(int index, int*& arr, int size) {
     delete[] arr2;
     arr2 = nullptr; // Pointer is now pointing to nothing, clearing space 
 
-    int size4 = 10;
-    for (int i = 0; i < size4; i++) {
+    for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
     cout << endl;
