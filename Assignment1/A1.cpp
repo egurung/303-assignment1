@@ -1,6 +1,8 @@
 #include <iostream>
 #include "A1.h"
 
+using namespace std;
+
 int checkInt(int value, int* arr, int size) {
 
     for (int i = 0; i < size; i++) {
@@ -20,6 +22,12 @@ int modifyInt(int value, int index, int* arr) {
 
     arr[index] = value;
 
+    int size2 = 10;
+    for (int i = 0; i < size2; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
     return old;
 }
 
@@ -38,6 +46,11 @@ void addInt(int value, int*& arr, int size) {
     delete[] arr2;
     arr2 = nullptr;
 
+    int size3 = 11;
+    for (int i = 0; i < size3; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
 }
 
@@ -59,6 +72,12 @@ void removeInt(int index, int*& arr, int size) {
 
     delete[] arr2;
     arr2 = nullptr; // Pointer is now pointing to nothing, clearing space 
+
+    int size4 = 10;
+    for (int i = 0; i < size4; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 
 }
 
